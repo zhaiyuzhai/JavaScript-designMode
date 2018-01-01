@@ -21,7 +21,6 @@ var alert=function (data) {
     this.confirmBtn=data.confirm || "确认";
     this.contentNode.innerHTML=this.content;
     this.success=data.seccess || function () {
-
     };
     this.fail=data.fail || function () {
 
