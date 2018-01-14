@@ -22,11 +22,11 @@ var bindFn=demoFn.bind(obj);*/
 /*运用函数的柯里化*/
 
 function bind(fn,cont) {
-    var slice=[].slice;
+    var slice=[].slice,
     args=slice.call(arguments,2);
     return function () {
-        var addArgs=slice.call(arguments);
+        var addArgs=slice.call(arguments),
         allArgs=args.concat(addArgs);
-        return fn.apply(context,allArgs);
+        return fn.apply(cont,allArgs);
     }
 }

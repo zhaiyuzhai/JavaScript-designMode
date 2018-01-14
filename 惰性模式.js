@@ -19,7 +19,6 @@ A.on=function (dom,type,fn) {
 A.on=function (dom,type,on) {
     if(document.addEventListener){
         A.on=function (dom,type,on) {
-        ...
         }
     }else if(document.attachEvent){
 
