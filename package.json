@@ -1,0 +1,16 @@
+{
+  "name": "shejimohsi",
+  "version": "1.0.0",
+  "main": "观察者模式.js",
+  "scripts": {
+    "bulid":"babel 观察者模式.js -o bundle.js"
+  },
+  "author": "zhaiyu",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
