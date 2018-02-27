@@ -19,7 +19,7 @@ var viewComman=(function () {
     },
     html='';
     function formateString(str,obj) {
-        return str.replace(/\{#(w+)#\}/ig,function(match,key){
+        return str.replace(/\{#(\w+)#\}/ig,function(match,key){
             return obj[key];
         })
     }
