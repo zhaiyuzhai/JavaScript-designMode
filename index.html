@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<div data-bind="type:1,data:1" id="d"></div>
+<script>
+    console.log(new Function('return{' +
+		d.getAttribute('data-bind')+'}')())
+</script>
+</body>
+</html>
